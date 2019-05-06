@@ -61,6 +61,7 @@ then
 		else			# Otherwise, if content is different from 0 (valid file).
 			num=$((num+1))
 			echo $link >> links.txt	# keep the link in the links.txt folder.
+			mv $prefijof$sufijo $(pdfgrep . $prefijof$sufijo | head -15 | tr -s '\n' | head -5 | tr '\n' ' ' | tr -s ' ' '_')
 		fi
 		sufijo=$((sufijo+1))
 	done
@@ -80,6 +81,7 @@ else
 		else			# Otherwise, if content is different from 0 (valid file).
 			num=$((num+1))
 			echo $link >> links.txt	# keep the link in the links.txt folder.
+			mv $prefijof$sufijo $(pdfgrep . $prefijof$sufijo | head -15 | tr -s '\n' | head -3)
 			state=1
 
 		fi
