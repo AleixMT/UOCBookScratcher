@@ -25,32 +25,33 @@
   
 prefijof="MostraPDFMaterialAction.do?id="	# Initialize prefijof var. which contains the first part of the name of the downloaded files 	
 prefijo="http://cvapp.uoc.edu/autors/MostraPDFMaterialAction.do?id="	# Initialize prefijo var, which contains the first part of the links
-mkdir books  	# Creates "books" folder, if already exists an error will be shown, but execution will continue
+if [ ! -d books ]; then
+	mkdir books 	# Creates "books" folder, if already exists an error will be shown, but execution will continue
+fi
 cd books	# Enter in "books" folder
-if [ -f dades.txt ]	# If file "dades.txt" exists, (this is not the first execution) we need to continue from the last link we generated so...
+
+if [ -f links.txt ]	# If file "dades.txt" exists, (this is not the first execution) we need to continue from the last link we generated so...
 then
-	sufijo=$(tail -1 dades.txt)	# ... we capture last line from dades.txt (which contains the last id number consulted) and keep it in var.
+	sufijo=$(tail -1 links.txt | grep -Eo "[0-9]*")	# ... we capture last line from dades.txt (which contains the last id number consulted) and keep it in var.
+	num=$(cat links.txt | wc -l)
 else			# if doesn't exist generate a new one
-	echo 0 >dades.txt	# We create dades.txt with a 0 in it. 
 	sufijo=0		# initialize sufijo var with a 0 (first id link).
+	num=0
 fi 
+
 while [ $sufijo -lt 9999999 ]; do	# While var sufijo is less than 9999999 do following instructions:
-	echo "Link número $sufijo"	# Print the link number on screen
-	num=$(ls -l | wc -l)		# Count how many lines (wc -l) are displayed by ls -l (show files in directory) and keep it in num.
-	let num=$num-3			# Adjust num var, which contains now the number of books downloaded by the moment
-	echo "$num llibres trobats"	# Print how many books we have found
+	echo "· $num llibres trobats de $sufijo links revisats"	# Print the link number on screen
 	link=$prefijo$sufijo		# link = prefijo+sufijo. Generate a new link adding prefijo and sufijo
-	content=$(wget 2>&1 $link | grep -o "Longitud:.*" | cut -d ' ' -f2) 
+	content=$(wget 2>&1 $link | grep -oE "Longitud: [0-9]*|Length: [0-9]* " | cut -d ' ' -f2) 
 # Download the file pointed by the link contained in variable link. Redirect stderr to stdout (2>&1) | Keep only the line that contains the size of the file | Cut it for keeping just the number containing the size of the downloaded file. Keep this number in var. content.
 	if [ $content = 0 ]	# if content (size of the downloaded file) is 0 (we have just downloaded an empty file)
 	then
-		f=$prefijof$sufijo	# Generate the name of the last downloaded file f = prefijo+sufijo
-		rm $f			# Remove this file
+		rm $prefijof$sufijo			# Remove this file
 	else			# Otherwise, if content is different from 0 (valid file).
+		num=$((num+1))
 		echo $link >> links.txt	# keep the link in the links.txt folder.
 	fi
-	echo $sufijo>dades.txt		# Save the last id number consulted in dades.txt
-	let sufijo=$sufijo+1		# Add 1 to sufijo for consulting the next link
+	sufijo=$((sufijo+1))
 done
 
 #http://cvapp.uoc.edu/autors/MostraPDFMaterialAction.do?id=151860"
