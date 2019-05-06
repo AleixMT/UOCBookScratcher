@@ -53,9 +53,9 @@ then
 	while [ $sufijo -lt 9999999 ]; do	# While var sufijo is less than 9999999 do following instructions:
 		echo "· $num llibres trobats de $sufijo links revisats"	# Print the link number on screen
 		link=$prefijo$sufijo		# link = prefijo+sufijo. Generate a new link adding prefijo and sufijo
-		content=$(wget 2>&1 $link | grep -oE "Longitud: [0-9]*|Length: [0-9]* " | cut -d ' ' -f2) 
+		wget -q 2>&1 $link
 	# Download the file pointed by the link contained in variable link. Redirect stderr to stdout (2>&1) | Keep only the line that contains the size of the file | Cut it for keeping just the number containing the size of the downloaded file. Keep this number in var. content.
-		if [ $content = 0 ]	# if content (size of the downloaded file) is 0 (we have just downloaded an empty file)
+		if [ ! -s $prefijof$sufijo ]	# if content (size of the downloaded file) is 0 (we have just downloaded an empty file)
 		then
 			rm $prefijof$sufijo			# Remove this file
 		else			# Otherwise, if content is different from 0 (valid file).
