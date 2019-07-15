@@ -22,7 +22,6 @@
 # and write:												#
 # ./uocbookscratcher.sh											#
 #########################################################################################################
-  
 prefijof="MostraPDFMaterialAction.do?id="	# Initialize prefijof var. which contains the first part of the name of the downloaded files 	
 prefijo="http://cvapp.uoc.edu/autors/MostraPDFMaterialAction.do?id="	# Initialize prefijo var, which contains the first part of the links
 if [ ! -d books ]; then
@@ -30,29 +29,44 @@ if [ ! -d books ]; then
 fi
 cd books	# Enter in "books" folder
 
-if [ -f links.txt ]	# If file "dades.txt" exists, (this is not the first execution) we need to continue from the last link we generated so...
+if [ -f links.txt ]	# If file "links.txt" exists, (this is not the first execution) we need to continue from the last link we generated so...
 then
 	sufijo=$(tail -1 links.txt | grep -Eo "[0-9]*")	# ... we capture last line from dades.txt (which contains the last id number consulted) and keep it in var.
-	num=$(cat links.txt | wc -l)
+	sufijo=$((sufijo+1))
+	state=$(tail -1 links.txt | grep $prefijof | wc -w)
+	if [ $state = 0 ]
+	then 
+		num=0
+	else
+		num=$(cat links.txt | wc -l)
+	fi
+
 else			# if doesn't exist generate a new one
-	sufijo=0		# initialize sufijo var with a 0 (first id link).
+	sufijo=151859		# initialize sufijo var with a 151859 (first id link found by testing on 15/7/19).
 	num=0
 fi 
 
 while [ $sufijo -lt 9999999 ]; do	# While var sufijo is less than 9999999 do following instructions:
 	echo "· $num llibres trobats de $sufijo links revisats"	# Print the link number on screen
 	link=$prefijo$sufijo		# link = prefijo+sufijo. Generate a new link adding prefijo and sufijo
-	content=$(wget 2>&1 $link | grep -oE "Longitud: [0-9]*|Length: [0-9]* " | cut -d ' ' -f2) 
+	echo $link
+	wget -q $link
 # Download the file pointed by the link contained in variable link. Redirect stderr to stdout (2>&1) | Keep only the line that contains the size of the file | Cut it for keeping just the number containing the size of the downloaded file. Keep this number in var. content.
-	if [ $content = 0 ]	# if content (size of the downloaded file) is 0 (we have just downloaded an empty file)
+	if [ ! -s $prefijof$sufijo ]	# if content (size of the downloaded file) is 0 (we have just downloaded an empty file)
 	then
 		rm $prefijof$sufijo			# Remove this file
 	else			# Otherwise, if content is different from 0 (valid file).
 		num=$((num+1))
+
 		echo $link >> links.txt	# keep the link in the links.txt folder.
+		infollibre=$(pdfgrep . $prefijof$sufijo | tr -s '\n' | tr '\n' ' ' | grep -shoP "^.*? *PID_[0-9]*").pdf
+		echo -e "Llibre trobat! Títol: $infollibre"
+		mv $prefijof$sufijo "$infollibre"
 	fi
 	sufijo=$((sufijo+1))
 done
+
+
 
 #http://cvapp.uoc.edu/autors/MostraPDFMaterialAction.do?id=151860"
 
