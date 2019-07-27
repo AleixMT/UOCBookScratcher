@@ -1,0 +1,582 @@
+society,Sociedad_y_ciencias_sociales
+activism,Sociedad_y_ciencias_sociales
+business,Sociedad_y_ciencias_sociales
+communication,Tecnología_y_ciencias_aplicadas
+crime,Sociedad_y_ciencias_sociales
+education,Sociedad_y_ciencias_sociales
+ethnic groups,Sociedad_y_ciencias_sociales
+family,Sociedad_y_ciencias_sociales
+finance,Sociedad_y_ciencias_sociales
+globalization,Sociedad_y_ciencias_sociales
+government,Sociedad_y_ciencias_sociales
+health,Personas
+home,Personas
+industries,Sociedad_y_ciencias_sociales
+infrastructure,Sociedad_y_ciencias_sociales
+law,Sociedad_y_ciencias_sociales
+mass media,Cultura_y_arte
+military,Sociedad_y_ciencias_sociales
+money,Sociedad_y_ciencias_sociales
+organizations,Sociedad_y_ciencias_sociales
+peace,Sociedad_y_ciencias_sociales
+politics,Sociedad_y_ciencias_sociales
+real estate,Sociedad_y_ciencias_sociales
+rights war,Sociedad_y_ciencias_sociales
+social sciences,Sociedad_y_ciencias_sociales
+anthropology,Sociedad_y_ciencias_sociales
+archaeology,Sociedad_y_ciencias_sociales
+cultural studies,Sociedad_y_ciencias_sociales
+demographics,Sociedad_y_ciencias_sociales
+economics,Sociedad_y_ciencias_sociales
+information science,Tecnología_y_ciencias_aplicadas
+international relations,Sociedad_y_ciencias_sociales
+linguistics,Sociedad_y_ciencias_sociales
+media studies,Tecnología_y_ciencias_aplicadas
+political science,Sociedad_y_ciencias_sociales
+psychology,Sociedad_y_ciencias_sociales
+public administration,Sociedad_y_ciencias_sociales
+sexology,Sociedad_y_ciencias_sociales
+social scientists,Sociedad_y_ciencias_sociales
+sociology,Sociedad_y_ciencias_sociales
+social work,Sociedad_y_ciencias_sociales
+systems theory,Sociedad_y_ciencias_sociales
+biology,Ciencias_naturales_y_físicas
+botany,Ciencias_naturales_y_físicas
+ecology,Ciencias_naturales_y_físicas
+health sciences,Ciencias_naturales_y_físicas
+medicine,Tecnología_y_ciencias_aplicadas
+neuroscience,Ciencias_naturales_y_físicas
+zoology,Ciencias_naturales_y_físicas
+earth sciences,Ciencias_naturales_y_físicas
+atmospheric sciences,Ciencias_naturales_y_físicas
+geography,Ciencias_naturales_y_físicas
+geology,Ciencias_naturales_y_físicas
+geophysics,Ciencias_naturales_y_físicas
+oceanography,Ciencias_naturales_y_físicas
+nature,Ciencias_naturales_y_físicas
+animals,Ciencias_naturales_y_físicas
+environment,Ciencias_naturales_y_físicas
+humans,Personas
+life,Ciencias_naturales_y_físicas
+natural resources,Ciencias_naturales_y_físicas
+plants,Ciencias_naturales_y_físicas
+pollution,Ciencias_naturales_y_físicas
+physical sciences,Ciencias_naturales_y_físicas
+astronomy,Ciencias_naturales_y_físicas
+chemistry,Ciencias_naturales_y_físicas
+climate,Ciencias_naturales_y_físicas
+physics,Ciencias_naturales_y_físicas
+space,Ciencias_naturales_y_físicas
+universe,Ciencias_naturales_y_físicas
+scientific method,Ciencias_naturales_y_físicas
+scientists,Personas
+culture and humanities,Cultura_y_arte
+classics,Cultura_y_arte
+critical theory,Cultura_y_arte
+cultural anthropology,Cultura_y_arte
+folklore,Cultura_y_arte
+food culture,Cultura_y_arte
+food and drink,Personas
+languages,Tecnología_y_ciencias_aplicadas
+literature,Filosofía_y_pensamiento
+museology,Cultura_y_arte
+mythology,Religión_y_creencias
+philosophy,Cultura_y_arte
+popular culture,Cultura_y_arte
+science and culture,Cultura_y_arte
+traditions,Cultura_y_arte
+arts and entertainment,Cultura_y_arte
+arts and crafts,Cultura_y_arte
+celebrity,Cultura_y_arte
+censorship in the arts,Cultura_y_arte
+festivals,Cultura_y_arte
+humor,Cultura_y_arte
+museums,Cultura_y_arte
+parties,Cultura_y_arte
+poetry,Cultura_y_arte
+performing arts,Cultura_y_arte
+circus,Cultura_y_arte
+dance,Cultura_y_arte
+film,Cultura_y_arte
+music,Cultura_y_arte
+opera,Cultura_y_arte
+storytelling,Cultura_y_arte
+theatre,Cultura_y_arte
+visual arts,Cultura_y_arte
+architecture,Tecnología_y_ciencias_aplicadas
+comics,Cultura_y_arte
+crafts,Cultura_y_arte
+design,Tecnología_y_ciencias_aplicadas
+drawing,Cultura_y_arte
+animation,Cultura_y_arte
+new media art,Cultura_y_arte
+painting,Cultura_y_arte
+photography,Cultura_y_arte
+sculpture,Cultura_y_arte
+games and toys,Cultura_y_arte
+board games,Cultura_y_arte
+card games,Cultura_y_arte
+dolls,Cultura_y_arte
+puppetry,Cultura_y_arte
+puzzles,Cultura_y_arte
+role-playing games,Cultura_y_arte
+video games,Cultura_y_arte
+sports and recreation,Cultura_y_arte
+air sports,Cultura_y_arte
+american football,Cultura_y_arte
+association football,Cultura_y_arte
+auto racing,Cultura_y_arte
+baseball,Cultura_y_arte
+basketball,Cultura_y_arte
+boating,Cultura_y_arte
+boxing,Cultura_y_arte
+canoeing,Cultura_y_arte
+cricket,Cultura_y_arte
+cycling,Tecnología_y_ciencias_aplicadas
+exercise,Salud
+fishing,Cultura_y_arte
+golf,Cultura_y_arte
+gymnastics,Cultura_y_arte
+hobbies,Personas
+horse racing,Cultura_y_arte
+ice hockey,Cultura_y_arte
+lacrosse,Cultura_y_arte
+olympic,Cultura_y_arte
+games,Personas
+rugby league,Cultura_y_arte
+rugby union,Cultura_y_arte
+sailing,Cultura_y_arte
+skiing,Cultura_y_arte
+swimming,Salud
+tennis,Cultura_y_arte
+track and field,Cultura_y_arte
+walking trails,Cultura_y_arte
+water sports,Cultura_y_arte
+whitewater sports,Cultura_y_arte
+broadcasting,Cultura_y_arte
+internet,Tecnología_y_ciencias_aplicadas
+magazines,Cultura_y_arte
+newspapers,Cultura_y_arte
+publications,Cultura_y_arte
+publishing,Cultura_y_arte
+television,Cultura_y_arte
+radio,Cultura_y_arte
+self care,Salud
+health promotion,Salud
+life extension,Salud
+prevention,Salud
+sexual health,Salud
+sleep,Salud
+skin,Salud
+care,Salud
+nutrition,Salud
+dietary supplements,Salud
+dietetics,Salud
+nutrients,Salud
+amino acids,Salud
+minerals,Salud
+nootropics,Salud
+phytochemicals,Salud
+vitamins,Salud
+nutritional advice pyramids,Salud
+aerobics,Salud
+bodyweight exercise (calisthenics),Salud
+exercise equipment,Salud
+exercise instructors,Salud
+dancing,Salud
+exercise physiology,Salud
+hiking,Salud
+pilates,Salud
+running,Salud
+sports,Salud
+tai chi,Salud
+walking,Salud
+weight training exercises,Salud
+yoga,Salud
+hygiene,Salud
+cleaning,Salud
+oral hygiene,Salud
+positive psychology,Salud
+mental health,Salud
+psychotherapy,Salud
+public health,Salud
+health by country,Salud
+healthcare,Salud
+health law,Salud
+health standards,Salud
+hospitals,Salud
+occupational safety and health,Salud
+pharmaceutical industry,Salud
+pharmaceuticals policy,Salud
+safety,Salud
+health science,Salud
+clinical research,Salud
+diseases,Salud
+epidemiology,Salud
+midwifery,Salud
+nursing,Salud
+optometry,Salud
+pharmacy,Salud
+human medicine,Salud
+alternative medicine,Salud
+cardiology,Salud
+endocrinology,Salud
+forensics,Tecnología_y_ciencias_aplicadas
+gastroenterology,Salud
+human,Salud
+genetics,Salud
+geriatrics,Salud
+gerontology,Salud
+gynecology,Salud
+hematology,Salud
+nephrology,Salud
+neurology,Salud
+obstetrics,Salud
+oncology,Salud
+ophthalmology,Salud
+orthopedic surgical procedures,Salud
+pathology,Salud
+pediatrics,Salud
+psychiatry,Salud
+rheumatology,Salud
+surgery,Salud
+urology,Salud
+dentistry,Salud
+dental hygiene,Salud
+orthodontics,Salud
+veterinary medicine,Salud
+philosophy branches schools and traditions,Filosofía_y_pensamiento
+movements,Filosofía_y_pensamiento
+concepts,Filosofía_y_pensamiento
+theories,Filosofía_y_pensamiento
+arguments,Filosofía_y_pensamiento
+philosophers,Personas
+history by period,Filosofía_y_pensamiento
+by region,Filosofía_y_pensamiento
+aesthetics,Filosofía_y_pensamiento
+epistemology,Filosofía_y_pensamiento
+ethics,Filosofía_y_pensamiento
+logic,Filosofía_y_pensamiento
+metaphysics,Filosofía_y_pensamiento
+social philosophy,Filosofía_y_pensamiento
+thinking / thinking skills,Filosofía_y_pensamiento
+attention,Filosofía_y_pensamiento
+cognition,Filosofía_y_pensamiento
+cognitive biases,Filosofía_y_pensamiento
+creativity,Filosofía_y_pensamiento
+decision theory,Matemáticas_y_lógica
+emotion,Filosofía_y_pensamiento
+error,Filosofía_y_pensamiento
+imagination,Filosofía_y_pensamiento
+intelligence,Filosofía_y_pensamiento
+learning memory,Filosofía_y_pensamiento
+biases mnemonics,Filosofía_y_pensamiento
+nootropics (smart drugs),Filosofía_y_pensamiento
+organizational thinking (strategic management),Filosofía_y_pensamiento
+perception,Filosofía_y_pensamiento
+problem solving,Filosofía_y_pensamiento
+psychological adjustment,Filosofía_y_pensamiento
+psychometrics,Filosofía_y_pensamiento
+allah,Religión_y_creencias
+bible,Religión_y_creencias
+buddhas,Religión_y_creencias
+deities,Religión_y_creencias
+demons,Religión_y_creencias
+exorcism,Religión_y_creencias
+god,Religión_y_creencias
+jesus,Religión_y_creencias
+occult,Religión_y_creencias
+prayer,Religión_y_creencias
+prophecy,Religión_y_creencias
+quran,Religión_y_creencias
+religious ethics,Religión_y_creencias
+religious law,Religión_y_creencias
+ritual,Religión_y_creencias
+spirituality,Religión_y_creencias
+theology,Religión_y_creencias
+belief systems,Religión_y_creencias
+religious faiths traditions and movements,Religión_y_creencias
+agnosticism,Religión_y_creencias
+animism,Religión_y_creencias
+atheism,Religión_y_creencias
+deism,Religión_y_creencias
+determinism,Religión_y_creencias
+esotericism,Religión_y_creencias
+gnosticism,Religión_y_creencias
+humanism,Religión_y_creencias
+monism,Religión_y_creencias
+monotheism,Religión_y_creencias
+mysticism,Religión_y_creencias
+new age,Religión_y_creencias
+paganism,Religión_y_creencias
+pantheism,Religión_y_creencias
+polytheism,Religión_y_creencias
+shamanism,Religión_y_creencias
+skepticism,Religión_y_creencias
+spiritualism,Religión_y_creencias
+theosophy,Religión_y_creencias
+transcendentalism,Religión_y_creencias
+unitarianism,Religión_y_creencias
+major beliefs of the world,Religión_y_creencias
+ayyavazhi,Religión_y_creencias
+bahá'í,Religión_y_creencias
+faith,Religión_y_creencias
+buddhism,Religión_y_creencias
+caodaism,Religión_y_creencias
+chinese folk,Religión_y_creencias
+religion,Historia
+christianity,Religión_y_creencias
+confucianism,Religión_y_creencias
+druidry,Religión_y_creencias
+falun,Religión_y_creencias
+gong,Religión_y_creencias
+hinduism,Religión_y_creencias
+islam,Religión_y_creencias
+jainism,Religión_y_creencias
+judaism,Religión_y_creencias
+mormonism,Religión_y_creencias
+neo-druidism,Religión_y_creencias
+neopaganism,Religión_y_creencias
+rastafarianism,Religión_y_creencias
+satanism,Religión_y_creencias
+scientology,Religión_y_creencias
+shinto,Religión_y_creencias
+sikhism,Religión_y_creencias
+spiritism,Religión_y_creencias
+taoism,Religión_y_creencias
+tenrikyo,Religión_y_creencias
+unitarian,Religión_y_creencias
+universalism,Religión_y_creencias
+wicca,Religión_y_creencias
+zoroastrianism,Religión_y_creencias
+mythology by culture,Religión_y_creencias
+buddhist mythology,Religión_y_creencias
+christian mythology,Religión_y_creencias
+hindu mythology,Religión_y_creencias
+islamic mythology,Religión_y_creencias
+jewish mythology,Religión_y_creencias
+people,Personas
+beginners and newcomers,Personas
+children,Personas
+heads of state,Personas
+people by legal status,Personas
+men,Personas
+old age,Personas
+political people,Personas
+rivalry,Personas
+social groups,Personas
+subcultures,Personas
+women,Personas
+people by city company continent educational institution ethnicity descent origin medical or psychological condition nationality occupation political orientation religion revolution status year born year deceased,Personas
+lists of people,Personas
+personal timelines,Personas
+terms for males,Personas
+activists,Personas
+actors,Personas
+astronauts,Personas
+billionaires,Personas
+chief executive officers,Personas
+composers,Personas
+cyborgs,Personas
+defectors,Personas
+generals,Personas
+humanitarians,Personas
+innovators,Personas
+inventors,Personas
+lesbian,Personas
+gay,Personas
+bisexual,Personas
+transgender,Personas
+lgbt people,Personas
+monarchs,Personas
+musicians,Personas
+musical groups,Personas
+photographers,Personas
+politicians,Personas
+presidents,Personas
+princes,Personas
+princesses,Personas
+revolutionaries,Personas
+settlers,Personas
+singers,Personas
+slaves,Personas
+victims,Personas
+people associated with war,Personas
+writers,Personas
+self,Personas
+alter egos,Personas
+consciousness studies,Personas
+gender,Personas
+personality,Personas
+sexuality,Personas
+sexual orientation,Personas
+personal life,Personas
+clothing,Personas
+employment,Personas
+entertainment,Personas
+income,Personas
+interpersonal relationships,Personas
+leisure,Personas
+love,Personas
+motivation,Personas
+personal development,Personas
+pets,Personas
+earth,Geografía
+world,Geografía
+bodies of water,Geografía
+cities,Geografía
+communities,Geografía
+continents,Geografía
+countries,Geografía
+deserts,Geografía
+lakes,Geografía
+landforms,Geografía
+mountains,Geografía
+navigation,Geografía
+oceans,Geografía
+populated places,Geografía
+protected areas,Geografía
+regions,Geografía
+rivers,Geografía
+subterranea,Geografía
+territories,Geografía
+towns,Geografía
+villages,Geografía
+by period,Historia
+by topic,Historia
+science,Historia
+historiography,Historia
+timelines,Historia
+history by location,Historia
+by continent africa asia europe america,Historia
+by region north america south america central europe middle east oceania,Historia
+by country by city empires,Historia
+formal sciences,Matemáticas_y_lógica
+mathematics mathematics education equations heuristics measurement numbers proofs theorems,Matemáticas_y_lógica
+fields of mathematics arithmetic algebra geometry trigonometry mathematical analysis calculus,Matemáticas_y_lógica
+logic deductive reasoning inductive reasoning history of logic fallacies metalogic philosophy of logic,Matemáticas_y_lógica
+mathematical sciences,Matemáticas_y_lógica
+computational science,Matemáticas_y_lógica
+operations research,Matemáticas_y_lógica
+theoretical physics,Matemáticas_y_lógica
+statistics,Matemáticas_y_lógica
+analysis of variance,Matemáticas_y_lógica
+bayesian statistics,Matemáticas_y_lógica
+categorical data,Matemáticas_y_lógica
+covariance and correlation,Matemáticas_y_lógica
+data analysis,Matemáticas_y_lógica
+design of experiments,Matemáticas_y_lógica
+logic and statistics,Matemáticas_y_lógica
+multivariate statistics,Matemáticas_y_lógica
+non-parametric statistics,Matemáticas_y_lógica
+parametric statistics,Matemáticas_y_lógica
+regression analysis,Matemáticas_y_lógica
+sampling,Matemáticas_y_lógica
+statistical theory,Matemáticas_y_lógica
+stochastic processes,Matemáticas_y_lógica
+summary statistics,Matemáticas_y_lógica
+survival analysis,Matemáticas_y_lógica
+time series,Matemáticas_y_lógica
+agriculture,Tecnología_y_ciencias_aplicadas
+agronomy,Tecnología_y_ciencias_aplicadas
+automation,Tecnología_y_ciencias_aplicadas
+biotechnology,Tecnología_y_ciencias_aplicadas
+cartography,Tecnología_y_ciencias_aplicadas
+chemical engineering,Tecnología_y_ciencias_aplicadas
+telecommunications,Tecnología_y_ciencias_aplicadas
+construction,Tecnología_y_ciencias_aplicadas
+control theory,Tecnología_y_ciencias_aplicadas
+digital divide,Tecnología_y_ciencias_aplicadas
+earthquake engineering,Tecnología_y_ciencias_aplicadas
+energy,Tecnología_y_ciencias_aplicadas
+ergonomics,Tecnología_y_ciencias_aplicadas
+firefighting,Tecnología_y_ciencias_aplicadas
+fire prevention,Tecnología_y_ciencias_aplicadas
+forestry,Tecnología_y_ciencias_aplicadas
+industry,Tecnología_y_ciencias_aplicadas
+management,Tecnología_y_ciencias_aplicadas
+manufacturing,Tecnología_y_ciencias_aplicadas
+marketing,Tecnología_y_ciencias_aplicadas
+unsolved problems in neuroscience,Tecnología_y_ciencias_aplicadas
+metalworking,Tecnología_y_ciencias_aplicadas
+microtechnology,Tecnología_y_ciencias_aplicadas
+military science,Tecnología_y_ciencias_aplicadas
+mining,Tecnología_y_ciencias_aplicadas
+nanotechnology,Tecnología_y_ciencias_aplicadas
+nuclear technology,Tecnología_y_ciencias_aplicadas
+optics,Tecnología_y_ciencias_aplicadas
+plumbing,Tecnología_y_ciencias_aplicadas
+robotics,Tecnología_y_ciencias_aplicadas
+sound technology,Tecnología_y_ciencias_aplicadas
+technology forecasting,Tecnología_y_ciencias_aplicadas
+tools,Tecnología_y_ciencias_aplicadas
+computing,Tecnología_y_ciencias_aplicadas
+artificial intelligence,Tecnología_y_ciencias_aplicadas
+classes of computers,Tecnología_y_ciencias_aplicadas
+companies,Tecnología_y_ciencias_aplicadas
+computer architecture,Tecnología_y_ciencias_aplicadas
+computer model,Tecnología_y_ciencias_aplicadas
+computer engineering,Tecnología_y_ciencias_aplicadas
+computer science,Tecnología_y_ciencias_aplicadas
+computer security,Tecnología_y_ciencias_aplicadas
+computing and society,Tecnología_y_ciencias_aplicadas
+data,Tecnología_y_ciencias_aplicadas
+embedded systems,Tecnología_y_ciencias_aplicadas
+free software,Tecnología_y_ciencias_aplicadas
+human–computer interaction,Tecnología_y_ciencias_aplicadas
+information systems,Tecnología_y_ciencias_aplicadas
+information technology,Tecnología_y_ciencias_aplicadas
+mobile,Tecnología_y_ciencias_aplicadas
+web,Tecnología_y_ciencias_aplicadas
+multimedia,Tecnología_y_ciencias_aplicadas
+networks (industrial),Tecnología_y_ciencias_aplicadas
+operating systems,Tecnología_y_ciencias_aplicadas
+platforms,Tecnología_y_ciencias_aplicadas
+product lifecycle management,Tecnología_y_ciencias_aplicadas
+programming,Tecnología_y_ciencias_aplicadas
+real-time computing,Tecnología_y_ciencias_aplicadas
+software,Tecnología_y_ciencias_aplicadas
+software engineering,Tecnología_y_ciencias_aplicadas
+unsolved problems in computer science,Tecnología_y_ciencias_aplicadas
+electronics,Tecnología_y_ciencias_aplicadas
+avionics,Tecnología_y_ciencias_aplicadas
+circuits,Tecnología_y_ciencias_aplicadas
+connectors,Tecnología_y_ciencias_aplicadas
+consumer electronics,Tecnología_y_ciencias_aplicadas
+digital electronics,Tecnología_y_ciencias_aplicadas
+digital media,Tecnología_y_ciencias_aplicadas
+electrical components,Tecnología_y_ciencias_aplicadas
+electronic design,Tecnología_y_ciencias_aplicadas
+electronics manufacturing,Tecnología_y_ciencias_aplicadas
+integrated circuits,Tecnología_y_ciencias_aplicadas
+microwave technology,Tecnología_y_ciencias_aplicadas
+molecular electronics,Tecnología_y_ciencias_aplicadas
+water technology,Tecnología_y_ciencias_aplicadas
+optoelectronics,Tecnología_y_ciencias_aplicadas
+quantum electronics,Tecnología_y_ciencias_aplicadas
+radio-frequency identification,Tecnología_y_ciencias_aplicadas
+rfid,Tecnología_y_ciencias_aplicadas
+radio electronics,Tecnología_y_ciencias_aplicadas
+semiconductors,Tecnología_y_ciencias_aplicadas
+signal cables,Tecnología_y_ciencias_aplicadas
+surveillance,Tecnología_y_ciencias_aplicadas
+engineering,Tecnología_y_ciencias_aplicadas
+aerospace engineering,Tecnología_y_ciencias_aplicadas
+bioengineering,Tecnología_y_ciencias_aplicadas
+civil engineering,Tecnología_y_ciencias_aplicadas
+electrical engineering,Tecnología_y_ciencias_aplicadas
+environmental engineering,Tecnología_y_ciencias_aplicadas
+materials science,Tecnología_y_ciencias_aplicadas
+mechanical engineering,Tecnología_y_ciencias_aplicadas
+structural engineering,Tecnología_y_ciencias_aplicadas
+systems engineering,Tecnología_y_ciencias_aplicadas
+transport by country,Tecnología_y_ciencias_aplicadas
+automobiles,Tecnología_y_ciencias_aplicadas
+aviation,Tecnología_y_ciencias_aplicadas
+public transport,Tecnología_y_ciencias_aplicadas
+rail transport,Tecnología_y_ciencias_aplicadas
+road transport,Tecnología_y_ciencias_aplicadas
+shipping,Tecnología_y_ciencias_aplicadas
+spaceflight,Tecnología_y_ciencias_aplicadas
+vehicles,Tecnología_y_ciencias_aplicadas
+water transport,Tecnología_y_ciencias_aplicadas

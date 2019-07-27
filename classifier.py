@@ -20,8 +20,13 @@ for file in folder:
 		keyword = keyword.lstrip().rstrip().upper().swapcase()
 		trainingDataset[keyword] = file
 
+file_pointer = open("dictionary.csv", "w+")
+for keyword, value in trainingDataset.items():
+	file_pointer.write(keyword + "," + value + "\n")
 
-print(trainingDataset)
+print("DONE")
+
+input()
 langs = ["ES"]
 for lang in langs:
 	dictTemp = {}
