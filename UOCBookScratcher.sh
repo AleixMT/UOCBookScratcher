@@ -8,12 +8,12 @@
 # will go through all links with id from 1 to 9999999. This last number is arbitrary, so possibly more 	#
 # files can be found beyond this number.								#
 #													#
-# Files will be saved in the folder "books", created in the same location as this script. In this 	#
+# Files will be saved in the folder "books", created in the same location as this script. In this 	    #
 # location, you can also find the file "dades.txt", which contains the last id link number consulted. 	#
 # The script will start downloading from this number. You can modify this value in "dades.txt" with a 	#
 # number within 1 to 9999999. The file "links.txt" contains all links consulted pointing to valid files.#
-# Keep this file for future references.									#
-#													#
+# Keep this file for future references.									                                #
+#													                                                    #
 # For executing this file you need to give execution permission to this script. This can be done with 	#
 # chmod utility in most unix system: Open a terminal in the ubication of this script and write:		#
 # chmod 777 uocbookscratcher.sh										#
@@ -59,7 +59,7 @@ while [ $sufijo -lt 9999999 ]; do	# While var sufijo is less than 9999999 do fol
 		num=$((num+1))
 
 		echo $link >> links.txt	# keep the link in the links.txt folder.
-		infollibre=$(pdfgrep . $prefijof$sufijo | tr -s '\n' | tr '\n' ' ' | grep -shoP "^.*? *PID_[0-9]*").pdf
+		infollibre=$(pdfgrep . $prefijof$sufijo | tr -s '\n' | tr '\n' ' ' | grep -shoP "^.*? *PID_[0-9]*" | tr ' ' '_').pdf
 		echo -e "Llibre trobat! Títol: $infollibre"
 		mv $prefijof$sufijo "$infollibre"
 	fi
