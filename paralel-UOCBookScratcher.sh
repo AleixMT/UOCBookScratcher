@@ -44,39 +44,14 @@ else			# if doesn't exist generate a new one
 	sufijo=151859		# initialize sufijo var with a 151859 (first id link found by testing on 15/7/19).
 	num=0
 fi 
-cd books	# Enter in "books" folder
-for (( ;sufijo < 9999999 ; sufijo++ )); do	# While var sufijo is less than 9999999 do following instructions:
-	echo "· $num books found of $sufijo links revised"	# Print the link number on screen
-	link=$prefijo$sufijo		# link = prefijo+sufijo. Generate a new link adding prefijo and sufijo
-	size=$(wget --spider $link -O - 2>&1 | sed -ne '/Longitud/{s/.*: //;p}' | cut -d ' ' -f1)
-	if [ $size -eq 0 ]
-	then
-	    continue
-	fi
-	wget -q $link
-# Download the file pointed by the link contained in variable link. Redirect stderr to stdout (2>&1) | Keep only the line that contains the size of the file | Cut it for keeping just the number containing the size of the downloaded file. Keep this number in var. content.
-    num=$((num+1))
 
-    echo $link >> ../links.txt	# keep the link in the links.txt folder.
-    infollibre=$(pdfgrep . $prefijof$sufijo | tr -s '\n' | tr '\n' ' ' | grep -shoP "^.*?PID_[0-9]*" | tr -s ' ' | tr ' ' '_' | tr -d ",.'()[]{}")
-
-    if [ -z "$infollibre" ]
-    then
-        echo "WARNING: Untitled book. Renaming... "
-        infollibre=$sufijo
-    elif [ ${#infollibre} -gt 251 ]
-    then
-        echo $infollibre
-        echo "WARNING: Too large name. Resizing name..."
-        infollibre=${infollibre:0:251}
-        echo $infollibre
-    fi
-    infollibre=$infollibre.pdf
-
-    echo -e "· BOOK FOUND! Title:"
-    echo $infollibre
-    mv $prefijof$sufijo "$infollibre"
+rm instructions.sh
+for (( ; sufijo < 9999999; sufijo += $1 ))
+do
+	echo "bash single-UOCBookScratcher.sh $sufijo $1" >> instructions.sh	# Print the link number on screen
 done
+
+parallel --eta --bar --jobs 0 :::: instructions.sh
 
 
 

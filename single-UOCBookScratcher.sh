@@ -24,39 +24,20 @@
 #########################################################################################################
 prefijof="MostraPDFMaterialAction.do?id="	# Initialize prefijof var. which contains the first part of the name of the downloaded files 	
 prefijo="http://cvapp.uoc.edu/autors/MostraPDFMaterialAction.do?id="	# Initialize prefijo var, which contains the first part of the links
-if [ ! -d books ]; then
-	mkdir books 	# Creates "books" folder, if already exists an error will be shown, but execution will continue
-fi
 
-if [ -f links.txt ]	# If file "links.txt" exists, (this is not the first execution) we need to continue from the last link we generated so...
-then
-	sufijo=$(tail -1 links.txt | grep -Eo "[0-9]*")	# ... we capture last line from links.txt (which contains the last id number consulted) and keep it in var.
-	sufijo=$((sufijo+1))
-	state=$(tail -1 links.txt | grep $prefijof | wc -w)
-	if [ $state = 0 ]
-	then 
-		num=0
-	else
-		num=$(cat links.txt | wc -l)
-	fi
-
-else			# if doesn't exist generate a new one
-	sufijo=151859		# initialize sufijo var with a 151859 (first id link found by testing on 15/7/19).
-	num=0
-fi 
+maxLinkNumber=$(($1+$2))
 cd books	# Enter in "books" folder
-for (( ;sufijo < 9999999 ; sufijo++ )); do	# While var sufijo is less than 9999999 do following instructions:
-	echo "· $num books found of $sufijo links revised"	# Print the link number on screen
-	link=$prefijo$sufijo		# link = prefijo+sufijo. Generate a new link adding prefijo and sufijo
-	size=$(wget --spider $link -O - 2>&1 | sed -ne '/Longitud/{s/.*: //;p}' | cut -d ' ' -f1)
-	if [ $size -eq 0 ]
-	then
-	    continue
-	fi
-	wget -q $link
-# Download the file pointed by the link contained in variable link. Redirect stderr to stdout (2>&1) | Keep only the line that contains the size of the file | Cut it for keeping just the number containing the size of the downloaded file. Keep this number in var. content.
-    num=$((num+1))
+for (( sufijo = $1; sufijo < maxLinkNumber; sufijo++ ))
+do
+    link=$prefijo$sufijo		# link = prefijo+sufijo. Generate a new link adding prefijo and sufijo
+    size=$(wget --spider $link -O - 2>&1 | sed -ne '/Longitud/{s/.*: //;p}' | cut -d ' ' -f1)  #//HC
+    if [ $size -eq 0 ]
+    then
+        continue
+    fi
+    wget -q $link
 
+    # Download the file pointed by the link contained in variable link. Redirect stderr to stdout (2>&1) | Keep only the line that contains the size of the file | Cut it for keeping just the number containing the size of the downloaded file. Keep this number in var. content.
     echo $link >> ../links.txt	# keep the link in the links.txt folder.
     infollibre=$(pdfgrep . $prefijof$sufijo | tr -s '\n' | tr '\n' ' ' | grep -shoP "^.*?PID_[0-9]*" | tr -s ' ' | tr ' ' '_' | tr -d ",.'()[]{}")
 
@@ -71,13 +52,13 @@ for (( ;sufijo < 9999999 ; sufijo++ )); do	# While var sufijo is less than 99999
         infollibre=${infollibre:0:251}
         echo $infollibre
     fi
+
     infollibre=$infollibre.pdf
 
     echo -e "· BOOK FOUND! Title:"
     echo $infollibre
-    mv $prefijof$sufijo "$infollibre"
+    mv "$prefijof$sufijo" "$infollibre"
 done
-
 
 
 #http://cvapp.uoc.edu/autors/MostraPDFMaterialAction.do?id=151860"
