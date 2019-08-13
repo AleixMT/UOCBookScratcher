@@ -38,7 +38,6 @@ do
     wget -q $link
 
     # Download the file pointed by the link contained in variable link. Redirect stderr to stdout (2>&1) | Keep only the line that contains the size of the file | Cut it for keeping just the number containing the size of the downloaded file. Keep this number in var. content.
-    echo $link >> ../links.txt	# keep the link in the links.txt folder.
     infollibre=$(pdfgrep . $prefijof$sufijo | tr -s '\n' | tr '\n' ' ' | grep -shoP "^.*?PID_[0-9]*" | tr -s ' ' | tr ' ' '_' | tr -d ",.'()[]{}")
 
     if [ -z "$infollibre" ]
@@ -54,7 +53,7 @@ do
     fi
 
     infollibre=$infollibre.pdf
-
+    echo "$link $infollibre" >> $sufijo-$maxLinkNumber.csv	# keep the link in the links.txt folder.
     echo -e "· BOOK FOUND! Title:"
     echo $infollibre
     mv "$prefijof$sufijo" "$infollibre"

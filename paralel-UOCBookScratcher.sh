@@ -22,8 +22,13 @@
 # and write:												#
 # ./uocbookscratcher.sh											#
 #########################################################################################################
+
 prefijof="MostraPDFMaterialAction.do?id="	# Initialize prefijof var. which contains the first part of the name of the downloaded files 	
 prefijo="http://cvapp.uoc.edu/autors/MostraPDFMaterialAction.do?id="	# Initialize prefijo var, which contains the first part of the links
+N=10000000
+parts=$2
+linksPerProcess=$1
+
 if [ ! -d books ]; then
 	mkdir books 	# Creates "books" folder, if already exists an error will be shown, but execution will continue
 fi
@@ -45,14 +50,26 @@ else			# if doesn't exist generate a new one
 	num=0
 fi 
 
-rm instructions.sh
-for (( ; sufijo < 9999999; sufijo += $1 ))
+for (( ; sufijo < N; sufijo += N / parts ))
 do
-	echo "bash single-UOCBookScratcher.sh $sufijo $1" >> instructions.sh	# Print the link number on screen
+    rm instructions.sh
+    sufijoTemp=$sufijo
+    let "maxLimit = $sufijoTemp + $N / $parts"
+    for (( ; sufijoTemp < maxLimit; sufijoTemp += linksPerProcess ))
+    do
+        echo "bash single-UOCBookScratcher.sh $sufijoTemp $linksPerProcess" >> instructions.sh	# Print the link number on screen
+    done
+
+    parallel --eta --bar --jobs $(nproc) :::: instructions.sh
+
+    # reduce
+    for i in $(ls books/*.csv | sort)
+    do
+        more $i >> links.txt
+        rm $i
+    done
+
 done
-
-parallel --eta --bar --jobs 0 :::: instructions.sh
-
 
 
 #http://cvapp.uoc.edu/autors/MostraPDFMaterialAction.do?id=151860"
