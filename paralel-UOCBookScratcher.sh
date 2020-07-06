@@ -24,11 +24,12 @@
 #########################################################################################################
 
 prefijof="MostraPDFMaterialAction.do?id="	# Initialize prefijof var. which contains the first part of the name of the downloaded files 	
-prefijo="http://cvapp.uoc.edu/autors/MostraPDFMaterialAction.do?id="	# Initialize prefijo var, which contains the first part of the links
 N=10000000
-parts=$2
-linksPerProcess=$1
+parts=$1
+# N / prts
+linksPerProcess=$((${N}/${parts}))
 
+# Initializations
 if [ ! -d books ]; then
 	mkdir books 	# Creates "books" folder, if already exists an error will be shown, but execution will continue
 fi
@@ -50,11 +51,12 @@ else			# if doesn't exist generate a new one
 	num=0
 fi 
 
+# Run tasks
 for (( ; sufijo < N; sufijo += N / parts ))
 do
     rm instructions.sh
     sufijoTemp=$sufijo
-    let "maxLimit = $sufijoTemp + $N / $parts"
+    let "maxLimit = $sufijoTemp + $linksPerProcess"
     for (( ; sufijoTemp < maxLimit; sufijoTemp += linksPerProcess ))
     do
         echo "bash single-UOCBookScratcher.sh $sufijoTemp $linksPerProcess" >> instructions.sh	# Print the link number on screen
